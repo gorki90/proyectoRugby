@@ -41,7 +41,11 @@ String[]equipo= {"Senior Masculino","Sub18","Senior Femenino","Sub16", "SeniorB"
 		ClubArrayList al1=new ClubArrayList(); 
 		//ClubArrayList al2=new ClubArrayList();
 		JugadorArrayList jug=new JugadorArrayList();
-		jug.aniadirJugador();
+		Jugador jug1=new Jugador();
+		Jugador jug2=new Jugador();
+		jug.aniadirJugador(jug1);
+		jug.aniadirJugador(jug2);
+		jug.aniadirJugador(jugador1);
 		jug.rec();
 		
 		
@@ -68,6 +72,7 @@ String[]equipo= {"Senior Masculino","Sub18","Senior Femenino","Sub16", "SeniorB"
 		jugador3.visualizar3();
 		jugador4.visualizar3();
 		jugador5.visualizar3();
+		jug1.visualizar3();
 		res.visualizar4();
 		
 	}

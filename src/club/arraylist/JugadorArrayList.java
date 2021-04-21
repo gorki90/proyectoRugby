@@ -45,7 +45,7 @@ public class JugadorArrayList extends JFrame {
 	}
 
 
-	public void aniadirJugador() {
+	public void aniadirJugador(Jugador jug) {
 		Scanner src=new Scanner(System.in);
 		boolean continuar=true;
 		
@@ -58,10 +58,8 @@ public class JugadorArrayList extends JFrame {
 		seleccion=JOptionPane.showInputDialog(null, combo1, "Visualiza y escribe el club", JOptionPane.QUESTION_MESSAGE);
 		Club clu=new Club();
 		
-		jug1.setNombre(nombre);
-		jug2.setNombre(nombre);
-		jug3.setNombre(nombre);
-		jug4.setNombre(nombre);
+		jug.setNombre(nombre);
+		
 		if(seleccion.equals("Barakaldo")) {
 			clu.setNombre("Barakaldo");
 		}else if(seleccion.equals("Sestao")) {
@@ -75,14 +73,10 @@ public class JugadorArrayList extends JFrame {
 		}else if(seleccion.equals("Santurtzi")){
 			clu.setNombre("Santurtzi");
 		}
-		jug1.setClub(clu);
-		jug2.setClub(clu);
-		jug3.setClub(clu);
-		jug4.setClub(clu);
-		ar.add(jug1);
-		ar.add(jug2);
-		ar.add(jug3);
-		ar.add(jug4);
+		jug.setClub(clu);
+		
+		ar.add(jug);
+		
 		
 		
 		
